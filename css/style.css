@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	background: black;
+}
+* {
+	box-sizing: border-box;
+}
+div#body {
+	width: 600px;
+	margin: auto;
+	position: relative;
+}
+div.nose {
+	width: 200px;
+	height: 200px;
+	background: url(../img/nose.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 99;
+}
+div.money {
+	width: 400px;
+	height: 400px;
+	background: url(../img/dollar.png) no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-left: -162px;
+    margin-top: -113px;
+    z-index: 99;
+    position: relative;
+}
+div.coc {
+	width: 490px;
+    height: 200px;
+    background: url(../img/line.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	transform: rotate(20deg);
+	margin-top: -179px;
+    margin-left: -69px;
+}
+div.line {
+	width: 360px;
+	height: 80px;
+	background: black;
+	position: absolute;
+	top: 100%;
+	left: -405px;
+	z-index: 1;
+	transform: translateY(-150%);
+}
+div.boom {
+	animation: boom 1.4s cubic-bezier(0.21, 0.46, 1,-0.2) forwards 5.4s;
+}
+div.active {
+	animation: left 1.4s cubic-bezier(0.21, 0.46, 1,-0.2) forwards 5.4s;
+}
+div.asd {
+	animation: vs 1.4s cubic-bezier(0.21, 0.46, 1,-0.2) forwards 5.4s;
+}
+@keyframes left {
+	100% { margin-left: 200px; }
+}
+@keyframes leftt {
+	100% { left: -45px; }
+}
+@keyframes vs {
+	100% { margin-left: 361px; }
+}
+@keyframes boom {
+	100% {
+		left: -45px;
+	}
+}

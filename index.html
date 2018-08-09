@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+
+<div id="body">
+	<div class="nose"></div>
+	<div class="money"></div>
+	<div class="coc"></div>
+	<div class="line"></div>
+</div>
+
+<button style="display: block; margin: auto; position: relative; z-index: 99999999;">Get</button>
+
+<audio>
+  <source src="img/sound.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+	$('button').click(function(){
+		$('.nose').addClass('asd');
+		$('.money').addClass('active');
+		$('.line').addClass('boom');
+		$('audio').get(0).play();
+	})
+</script>
+</body>
+</html>
